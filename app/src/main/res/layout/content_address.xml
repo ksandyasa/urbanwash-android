@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="10"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/sv_address" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        app:queryHint="Search your address">
+
+    </android.support.v7.widget.SearchView>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="8.25" android:animateLayoutChanges="true">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gmap_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_result_address" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_alignParentTop="true"
+            android:visibility="invisible" android:background="@color/colorWhite">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="0.75"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_gps_address" android:layout_width="23dp"
+            android:layout_height="22dp" android:scaleType="fitCenter"
+            android:src="@drawable/icon_gps" android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_info_address" android:layout_width="22dp"
+            android:layout_height="22dp" android:scaleType="fitCenter"
+            android:src="@drawable/icon_info" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

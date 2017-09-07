@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" android:gravity="center_horizontal"
+    android:background="@drawable/login_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.urbanwash.wozapp.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_wozapp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/login_title_1"
+        android:gravity="center"
+        fontPath="fonts/HelveticaLTStd-Roman.otf"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/login_title_2"
+        android:gravity="center"
+        fontPath="fonts/HelveticaLTStd-Roman.otf"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="126dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:animateLayoutChanges="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_round_corner_bordered_normal1"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_round_corner_bordered_text_selector"
+            android:textAllCaps="false"
+            android:text="Username"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:animateLayoutChanges="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_round_corner_bordered_normal1"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_round_corner_bordered_text_selector"
+            android:textAllCaps="false"
+            android:text="Password"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9125"
+            android:background="@drawable/btn_round_corner_bordered_selector"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_round_corner_bordered_text_selector"
+            android:textAllCaps="false"
+            android:text="Login"
+            fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.075"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9125"
+            android:background="@drawable/btn_round_corner_bordered_selector"
+            android:textSize="16sp"
+            android:textColor="@drawable/btn_round_corner_bordered_text_selector"
+            android:textAllCaps="false"
+            android:text="Register"
+            fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/login_forgot_password"
+        android:gravity="center"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/login_terms_conditions"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+</LinearLayout>

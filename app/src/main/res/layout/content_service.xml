@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fillViewport="true"
+    android:paddingTop="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="76dp"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_regular_services" android:layout_width="76dp"
+                android:layout_height="match_parent" android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" android:scaleType="fitCenter"
+                android:src="@drawable/icon_regular" android:layout_marginLeft="20dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_express_services" android:layout_width="76dp"
+                android:layout_height="match_parent" android:layout_centerInParent="true"
+                android:scaleType="fitCenter" android:src="@drawable/icon_express" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_deluxe_services" android:layout_width="76dp"
+                android:layout_height="match_parent" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:scaleType="fitCenter"
+                android:src="@drawable/icon_deluxe" android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="24dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="56dp" android:layout_height="24dp"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" android:textSize="15sp"
+                android:textColor="@color/colorCustomGreen" android:text="Regular"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:gravity="center"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="56dp" android:layout_height="24dp"
+                android:layout_centerInParent="true" android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey1" android:text="Express"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:gravity="center"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="56dp" android:layout_height="24dp"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey1" android:text="Deluxe"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent" android:layout_height="19dp"
+            android:textSize="15sp" android:textColor="@color/colorLightGrey"
+            android:text="Select Item" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:gravity="center" android:layout_marginTop="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="76dp"
+            android:layout_marginTop="20dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_kg_service"
+                android:layout_width="76dp" android:layout_height="match_parent"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter" android:src="@drawable/icon_kg"
+                android:layout_marginLeft="20dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_piece_service"
+                android:layout_width="76dp" android:layout_height="match_parent"
+                android:layout_centerInParent="true" android:scaleType="fitCenter"
+                android:src="@drawable/icon_piece"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_dryclean_service"
+                android:layout_width="76dp" android:layout_height="match_parent"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:scaleType="fitCenter" android:src="@drawable/icon_dryclean"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_text_kgwash_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Kg/s" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Wash + Iron" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_text_pcwash_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerInParent="true" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Pc/s" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Wash + Iron" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_text_dryclean_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Dry Clean" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorDarkGrey1"
+                    android:text="Wash + Iron" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_weight_kgwash_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:textSize="18sp" android:textColor="@color/colorCustomGreen"
+                    android:text="4Kgs" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_weight_pcwash_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerInParent="true" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:textSize="18sp" android:textColor="@color/colorCustomGreen"
+                    android:text="8Pcs" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_weight_dryclean_services" android:layout_width="66dp"
+                android:layout_height="30dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:textSize="18sp" android:textColor="@color/colorCustomGreen"
+                    android:text="" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="32dp"
+            android:layout_marginTop="10dp" android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_price_kgwash_services" android:layout_width="0dp"
+                android:layout_height="32dp" android:orientation="vertical"
+                android:gravity="center" android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorCustomLightGrey"
+                    android:text="Subtotal" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="17dp"
+                    android:textSize="15sp" android:textColor="@color/colorCustomGreen"
+                    android:text="Rp. 120.000" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_price_pcwash_services" android:layout_width="0dp"
+                android:layout_height="32dp" android:orientation="vertical"
+                android:layout_weight="1" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorCustomLightGrey"
+                    android:text="Subtotal" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="17dp"
+                    android:textSize="15sp" android:textColor="@color/colorCustomGreen"
+                    android:text="Rp. 200.000" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_price_dryclean_services" android:layout_width="0dp"
+                android:layout_height="32dp" android:orientation="vertical"
+                android:gravity="center" android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="15dp"
+                    android:textSize="12sp" android:textColor="@color/colorCustomLightGrey"
+                    android:text="Subtotal" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="17dp"
+                    android:textSize="15sp" android:textColor="@color/colorLightGrey"
+                    android:text="IDR" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_total_service" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_total_service" android:layout_width="wrap_content"
+                android:layout_height="49dp" android:textSize="15sp"
+                android:textColor="@color/colorCustomLightGrey" android:text="Total charge"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_value_total_service" android:layout_width="wrap_content"
+                android:layout_height="49dp" android:textSize="24sp"
+                android:textColor="@color/colorCustomGreen" android:text="Rp. 200.000"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="114dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_top_item_myprofile2" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:textSize="15sp"
+        android:textColor="#adadad" android:text="Place"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_icon_item_myprofile2" android:layout_width="60dp"
+        android:layout_height="60dp" android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" android:scaleType="fitCenter"
+        android:src="@drawable/icon_home"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content_item_myprofile2" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_toRightOf="@id/iv_icon_item_myprofile2"
+        android:orientation="vertical" android:gravity="center_vertical"
+        android:layout_marginLeft="15dp" android:paddingRight="50dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_item_myprofile2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="15sp"
+            android:textColor="@color/colorDarkGrey" android:text="@string/start_tap_title"
+            android:gravity="center_vertical" fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_subtitle_item_myprofile2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp"
+            android:textSize="15sp" android:textColor="@color/colorDarkGrey"
+            android:text="@string/start_tap_title" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_close_item_myprofile2" android:layout_width="22dp"
+        android:layout_height="22dp" android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" android:scaleType="fitCenter"
+        android:src="@drawable/icon_close" android:layout_marginTop="27dp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_edit_item_myprofile2" android:layout_width="18dp"
+        android:layout_height="18dp" android:layout_toLeftOf="@id/iv_close_item_myprofile2"
+        android:layout_alignParentTop="true" android:scaleType="fitCenter"
+        android:src="@drawable/icon_edit" android:layout_marginTop="27dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

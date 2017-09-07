@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00A4BE</color>
+    <color name="colorAccent">#23B19E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightBlue">#81BCAE</color>
+    <color name="colorCustomGreen2">#34B0D7</color>
+    <color name="colorCustomGreen">#03A994</color>
+    <color name="colorCustomLightGrey">#bfbfbf</color>
+    <color name="colorCustomLightGrey1">#dedede</color>
+    <color name="colorDarkGrey">#515151</color>
+    <color name="colorDarkGrey1">#444749</color>
+    <color name="colorLightGrey">#d6d6d6</color>
+    <color name="colorCustomGreen1">#23B19E</color>
+    <color name="colorCustomLightGreen">#6DCBC2</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransluncent">#0000A4BE</color>
+    <color name="colorPurple">#ce81ff</color>
+    <color name="colorOrange">#fcc210</color>
+    <color name="colorMagenta">#fd9c9c</color>
+    <color name="colorStartProgress">#08a99b</color>
+    <color name="colorEndProgress">#2ca6cd</color>
+    <color name="colorBackgroundProgress">#dbdbdb</color>
+</resources>

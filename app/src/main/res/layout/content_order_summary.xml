@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorWhite" android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/ll_content1_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:paddingLeft="20dp" android:paddingRight="20dp" android:weightSum="2"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_pickup_order_summary"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/colorCustomLightGrey" android:textSize="12sp"
+                android:text="Pick Up" fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_date_pickup_order_summary"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGrey" android:textSize="21sp"
+                android:text="Friday, 29 Jan" fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_alignParentLeft="true" android:layout_below="@id/tv_title_pickup_order_summary"
+                android:layout_marginTop="8dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_time_pickup_order_summary"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGrey" android:textSize="15sp"
+                android:text="18:00 - 20:00 PM" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                android:layout_alignParentLeft="true" android:layout_below="@id/tv_date_pickup_order_summary"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_return_order_summary"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/colorCustomLightGrey" android:textSize="12sp"
+                android:text="Return" fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_date_return_order_summary"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGrey" android:textSize="21sp"
+                android:text="Sunday, 05 Feb" fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_alignParentLeft="true" android:layout_below="@id/tv_title_return_order_summary"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_date_return_order_summary" android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_time_return_order_summary"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGrey" android:textSize="15sp"
+                    android:text="07:00 - 08:00 PM" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_edit_return_order_summary" android:layout_width="14dp"
+                    android:layout_height="14dp" android:scaleType="fitCenter"
+                    android:src="@drawable/icon_edit" android:layout_marginLeft="13dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content2_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingRight="20dp"
+        android:paddingLeft="20dp" android:layout_marginTop="7dp"
+        android:layout_below="@id/ll_content1_order_summary" android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/colorCustomLightGrey" android:textSize="12sp"
+            android:text="* Return date/time can still be modified in order tracking menu\n(up to 2x change)" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:textStyle="italic"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content3_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="20dp"
+        android:paddingRight="20dp" android:layout_marginTop="13dp"
+        android:layout_below="@id/rl_content2_order_summary" android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_content3_order_summary"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/colorCustomLightGrey" android:textSize="12sp"
+            android:text="Location" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_below="@id/tv_title_content3_order_summary"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:layout_centerVertical="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:scaleType="fitCenter" android:src="@drawable/icon_apartement"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_address_content3_order_summary"
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:textColor="@color/colorDarkGrey" android:textSize="12sp"
+                android:text="Apartement Tamansari, Lt. 5,\nNo. 120, Jakarta Selatan" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp" android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content4_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="20dp"
+        android:paddingRight="20dp" android:layout_marginTop="13dp"
+        android:layout_below="@id/rl_content3_order_summary" android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_content4_order_summary"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/colorCustomLightGrey" android:textSize="12sp"
+            android:text="Services" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_below="@id/tv_title_content4_order_summary"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:layout_centerVertical="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:scaleType="fitCenter" android:src="@drawable/icon_express"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical" android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_detail1_content4_order_summary"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorCustomGreen" android:textSize="15sp"
+                    android:text="Express" fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_marginLeft="20dp" android:gravity="center_vertical"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_detail2_content4_order_summary"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGrey" android:textSize="12sp"
+                    android:text="Kilograms (4kg), Pieces (7Pcs: 4 Shirts, 2 Trunks, 1 Jacket)" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_marginLeft="20dp" android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content5_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="20dp"
+        android:paddingRight="20dp" android:layout_below="@id/rl_content4_order_summary"
+        android:layout_centerHorizontal="true" android:layout_marginTop="13dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_content5_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="12sp"
+            android:textColor="@color/colorCustomLightGrey" android:text="Payment"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_switch_content5_order_summary" android:layout_width="match_parent" android:layout_height="57dp"
+            android:scaleType="fitCenter" android:src="@drawable/iv_payment_cash_order_summary"
+            android:layout_below="@id/tv_title_content5_order_summary" android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content6_order_summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="20dp"
+        android:paddingRight="20dp" android:layout_below="@id/rl_content5_order_summary"
+        android:layout_centerHorizontal="true" android:layout_marginTop="11dp"
+        android:visibility="invisible">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_balance_content6_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="12sp"
+            android:textColor="@color/colorCustomLightGrey" android:text="Remaining balance : "
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_price_balance_content6_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="12sp"
+            android:textColor="@color/colorCustomGreen" android:text="Rp. 750.000"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_toRightOf="@id/tv_title_balance_content6_order_summary"
+            android:layout_centerVertical="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_topup_content6_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="12sp"
+            android:textColor="@color/colorCustomGreen" android:text="Top Up your Wallet"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content7_order_summary" android:layout_width="match_parent"
+        android:layout_height="49dp" android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_total_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="15sp"
+            android:textColor="@color/colorCustomLightGrey" android:text="Total charge"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_value_total_order_summary" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="24sp"
+            android:textColor="@color/colorCustomGreen" android:text="Rp. 200.000"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="55dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title_item_tabcontent_pricing" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" android:textSize="18sp"
+        android:textColor="#444749" android:text="Boneka Besar"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_marginLeft="10dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price_item_tabcontent_pricing" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" android:textSize="18sp"
+        android:textColor="#444749" android:text="Rp. 120.000"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

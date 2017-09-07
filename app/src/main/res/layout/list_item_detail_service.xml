@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_quantity_detail_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textColor="@color/colorCustomGreen"
+        android:text="4 kg(s) Wash"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price_value_detail_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textColor="@color/colorCustomGreen"
+        android:text="123,000"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price_title_detail_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_price_value_detail_service"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorCustomGreen"
+        android:text="Rp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rela xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content" android:layout_height="19dp"
+            android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+            android:text="@string/confirm_pick_up" fontPath="fonts/Roboto-Light.ttf"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_content_pickup_confirm" android:layout_width="wrap_content"
+                android:layout_height="46dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|left">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_date_pickup_confirm" android:layout_width="wrap_content"
+                    android:layout_height="28dp" android:textSize="24sp"
+                    android:textColor="@color/colorDarkGrey" android:text="Friday, 29 Jan"
+                    fontPath="fonts/Roboto-Light.ttf"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_time_pickup_confirm" android:layout_width="wrap_content"
+                    android:layout_height="18dp" android:textSize="15sp"
+                    android:textColor="@color/colorDarkGrey" android:text="18:00 - 20:00 PM"
+                    fontPath="fonts/Roboto-Light.ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_next_pickup_confirm" android:layout_width="46dp"
+                android:layout_height="46dp" android:orientation="horizontal"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" android:background="@drawable/round_bordered_background"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="24dp" android:layout_height="24dp"
+                    android:scaleType="fitCenter" android:src="@drawable/iv_arrow_right"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content" android:layout_height="19dp"
+            android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+            android:text="@string/confirm_return" fontPath="fonts/Roboto-Light.ttf"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_content_return_confirm" android:layout_width="wrap_content"
+                android:layout_height="46dp" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|left">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_date_return_confirm" android:layout_width="wrap_content"
+                    android:layout_height="28dp" android:textSize="24sp"
+                    android:textColor="@color/colorDarkGrey" android:text="Sunday, 05 Feb"
+                    fontPath="fonts/Roboto-Light.ttf"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_time_return_confirm" android:layout_width="wrap_content"
+                    android:layout_height="18dp" android:textSize="15sp"
+                    android:textColor="@color/colorDarkGrey" android:text="07:00 - 08:00 PM"
+                    fontPath="fonts/Roboto-Light.ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_next_return_confirm" android:layout_width="46dp"
+                android:layout_height="46dp" android:orientation="horizontal"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" android:background="@drawable/round_bordered_background"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="24dp" android:layout_height="24dp"
+                    android:scaleType="fitCenter" android:src="@drawable/iv_arrow_right"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content" android:layout_height="19dp"
+            android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+            android:text="@string/confirm_locations" fontPath="fonts/Roboto-Light.ttf"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_icon_location_confirm" android:layout_width="46dp"
+                android:layout_height="46dp" android:orientation="horizontal"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp" android:background="@drawable/round_bordered_background"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="24dp" android:layout_height="24dp"
+                    android:scaleType="fitCenter" android:src="@drawable/iv_wallet"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_location_confirm" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="vertical"
+                android:layout_centerVertical="true" android:layout_toRightOf="@id/ll_icon_location_confirm"
+                android:paddingLeft="16dp" android:paddingRight="16dp"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_street_locations_confirm" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="15sp"
+                    android:textColor="@color/colorDarkGrey" android:text="@string/schedule_street_address"
+                    fontPath="fonts/Roboto-Light.ttf"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content" android:layout_height="19dp"
+            android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+            android:text="@string/confirm_services" fontPath="fonts/Roboto-Light.ttf"
+            android:layout_marginTop="10dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/frame_services_regular_confirm" android:layout_width="match_parent"
+            android:layout_height="56dp" android:layout_marginTop="5dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_services_express_confirm" android:layout_width="match_parent"
+            android:layout_height="56dp" android:layout_marginTop="5dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_services_deluxe_confirm" android:layout_width="match_parent"
+            android:layout_height="56dp" android:layout_marginTop="5dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_total_confirm" android:layout_width="match_parent"
+            android:layout_height="56dp"
+            >
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</Rela>

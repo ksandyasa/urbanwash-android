@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/ll_name_register" android:layout_width="match_parent"
+        android:layout_height="150dp" android:orientation="vertical"
+        android:gravity="center" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_verification_register" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/colorCustomLightGrey"
+            android:textSize="24sp" android:text="Enter Verification Code"
+            android:gravity="center" fontPath="fonts/HelveticaLTStd-Roman.otf"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_verification_register" android:layout_width="match_parent"
+            android:layout_height="60dp" android:ems="10"
+            android:inputType="textEmailAddress" android:hint="e.g. 1234"
+            android:textSize="24sp" android:gravity="center"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginTop="30dp"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp" android:textColor="@color/colorCustomLightGrey"
+        android:textSize="15sp" android:text="Did not receive SMS?"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Roman.otf"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_sms_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_sendsms_register" android:layout_width="0dp"
+            android:layout_height="60dp" android:layout_weight="1"
+            android:textColor="@color/colorCustomGreen" android:textSize="15sp"
+            android:text="Resend SMS" android:gravity="center"
+            fontPath="fonts/HelveticaLTStd-Roman.otf"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_changephone_register" android:layout_width="0dp"
+            android:layout_height="60dp" android:layout_weight="1"
+            android:textColor="@color/colorCustomGreen" android:textSize="15sp"
+            android:text="Change Phone\nNumber" android:gravity="center"
+            fontPath="fonts/HelveticaLTStd-Roman.otf"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

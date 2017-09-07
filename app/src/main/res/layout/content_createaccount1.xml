@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/ll_name_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_name_register"
+            android:layout_width="101dp"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_name_register" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:ems="10"
+            android:inputType="textEmailAddress" android:hint="Name"
+            android:textSize="24sp" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginLeft="10dp"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_date_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_date_register" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:ems="10"
+            android:inputType="text" android:hint="Date of Birth"
+            android:textSize="24sp" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_email_register" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:ems="10"
+            android:inputType="textEmailAddress" android:hint="Email"
+            android:textSize="24sp" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mobile_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_mobile_register" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:ems="10"
+            android:inputType="phone" android:hint="Mobile"
+            android:textSize="24sp" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password_register" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_password_register" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:ems="10"
+            android:inputType="phone" android:hint="Password"
+            android:textSize="24sp" android:gravity="center_vertical"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

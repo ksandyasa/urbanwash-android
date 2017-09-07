@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Wozapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title_1">URBAN WASH</string>
+    <string name="login_title_2">\"New Lifestyle of Doing Laundry\"</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_terms_conditions">By joining us you agree to terms and conditions</string>
+    <string name="register_title">CREATE AN ACCOUNT</string>
+    <string name="register_info">We use your phone numbers to notify you when\n your orders ready</string>
+    <string name="start_order_title">Happy weekend Rado!</string>
+    <string name="start_tap_title">Tap to Start</string>
+    <string name="start_info_text">Your lifestyle needs your time more than your\nlaundry. Let us take care it!</string>
+    <string name="start_confirm">Confirm</string>
+    <string name="myorder_create">New Order</string>
+    <string name="myorder_item_order_received">Order Received</string>
+    <string name="myorder_item_pick_up">Pick Up</string>
+    <string name="myorder_item_cleaning">Cleaning</string>
+    <string name="myorder_item_delivery">Delivery</string>
+    <string name="myorder_item_complete">Complete</string>
+    <string name="schedule_where">Where ?</string>
+    <string name="schedule_street_address">Apartement Taman Sari, Lt. 5, No.120, Jakarta Selatan</string>
+    <string name="schedule_add_address">Add new address</string>
+    <string name="schedule_when">When ?</string>
+    <string name="schedule_info">Note? e.g. will be handed over by maid</string>
+    <string name="confirm_pick_up">Pick Up</string>
+    <string name="confirm_return">Return</string>
+    <string name="confirm_locations">Locations</string>
+    <string name="confirm_services">Services</string>
+    <string name="kg_service_info">No worries, our agent will recalculate it for you once\nthey pick up the laundry. We will round down the\nweight if the decimal is &lt; 0.6, else we round up.</string>
+    <string name="edittext_hint"><i>Note? e.g. will be handed over by maid</i></string>
+</resources>

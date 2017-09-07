@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@color/colorWhite">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gmap_register"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:layout_alignParentTop="true"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="78dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_pin_register" android:layout_width="20dp"
+                android:layout_height="25dp" android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter" android:src="@drawable/icon_pin"
+                />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/ed_pinlocation_register" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:ems="10"
+                android:inputType="textMultiLine" android:hint="Pick a location"
+                android:textSize="15sp" android:gravity="center_vertical"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginLeft="10dp"
+                android:focusable="false" android:paddingRight="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="78dp"
+            android:orientation="horizontal" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_edit_register" android:layout_width="20dp"
+                android:layout_height="20dp" android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter" android:src="@drawable/icon_edit"
+                android:layout_marginTop="10dp"
+                />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/ed_address_register" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:ems="10"
+                android:inputType="textMultiLine" android:text=""
+                android:textSize="15sp" android:gravity="left"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginLeft="10dp"
+                android:paddingRight="50dp"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent" android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" android:textColor="@color/colorCustomLightGrey"
+            android:textSize="15sp" android:text="Select your building type"
+            android:gravity="center" fontPath="fonts/HelveticaLTStd-Roman.otf"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="horizontal" android:layout_marginTop="16dp" android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/ll_home_building_register" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:orientation="vertical" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_home_building_register" android:layout_width="75dp"
+                    android:layout_height="75dp" android:scaleType="fitCenter"
+                    android:src="@drawable/icon_home_gray"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGrey" android:textSize="12sp"
+                    android:text="Home" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apartement_building_register" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:orientation="vertical" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_apartement_building_register" android:layout_width="75dp"
+                    android:layout_height="75dp" android:scaleType="fitCenter"
+                    android:src="@drawable/icon_apartement"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGrey" android:textSize="12sp"
+                    android:text="Apartement" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_office_building_register" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:orientation="vertical" android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_office_building_register" android:layout_width="75dp"
+                    android:layout_height="75dp" android:scaleType="fitCenter"
+                    android:src="@drawable/icon_office_gray"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGrey" android:textSize="12sp"
+                    android:text="Office" fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="25dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:background="@drawable/main_bg">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title_startorder" android:layout_width="match_parent"
+        android:layout_height="48dp" android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp" android:textSize="24sp"
+        android:textColor="@color/colorDarkGrey" android:text="@string/start_order_title"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+    <LinearLayout
+        android:id="@+id/ll_plus_startorder" android:layout_width="150dp"
+        android:layout_height="150dp" android:orientation="horizontal"
+        android:layout_centerInParent="true" android:background="@drawable/custom_round_green_background"
+        android:padding="24dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_plus_startorder" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:scaleType="fitCenter"
+            android:src="@drawable/logo_wozapp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_tapstart_startorder" android:layout_width="match_parent"
+        android:layout_height="36dp" android:layout_below="@id/ll_plus_startorder"
+        android:layout_marginTop="25dp" android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey" android:text="@string/start_tap_title"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_info_startorder" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" android:layout_marginBottom="50dp"
+        android:textSize="15sp" android:textColor="@color/colorDarkGrey"
+        android:text="@string/start_info_text" android:gravity="center"
+        fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+</RelativeLayout>

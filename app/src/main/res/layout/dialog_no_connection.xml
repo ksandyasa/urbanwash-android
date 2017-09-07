@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_content1_no_connection" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+        android:paddingLeft="28dp" android:paddingRight="28dp"
+        android:gravity="center_vertical" android:layout_marginTop="21dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="64dp" android:layout_height="64dp"
+            android:scaleType="fitCenter" android:src="@drawable/icon_error_connection"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginLeft="16dp" android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:textSize="24sp" android:textColor="@color/colorMagenta"
+                android:text="Error" android:gravity="left"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+                android:text="No Connection" android:gravity="left"
+                fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content2_no_connection" android:layout_width="match_parent"
+        android:layout_height="46dp" android:layout_below="@id/ll_content1_no_connection"
+        android:layout_centerHorizontal="true" android:layout_marginTop="14dp"
+        android:paddingLeft="28dp" android:paddingRight="28dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_content2_no_connection" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_centerInParent="true"
+            android:textSize="15sp" android:textColor="@color/colorWhite"
+            android:textAllCaps="false" android:text="Retry"
+            android:background="@drawable/dialog_edit_date_button_normal"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

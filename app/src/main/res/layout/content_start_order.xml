@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:weightSum="10">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" android:id="@+id/pb_startorder"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="0.1" android:indeterminate="false"
+        android:progressDrawable="@drawable/progress_start_order"
+        android:max="99" android:progress="66"/>
+
+    <id.urbanwash.wozapp.util.CustomViewPager
+        android:id="@+id/vp_startorder" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="8.9">
+
+    </id.urbanwash.wozapp.util.CustomViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:background="@drawable/custom_green_background"
+        android:animateLayoutChanges="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_arrow_right_startorder" android:layout_width="32dp"
+            android:layout_height="32dp" android:scaleType="fitCenter"
+            android:src="@drawable/iv_white_arrow_right" android:layout_centerInParent="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_confirm_startorder" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="19sp"
+            android:textColor="@drawable/startorder_step_text_selector" android:text="@string/start_confirm"
+            android:layout_centerInParent="true" android:visibility="invisible"
+            fontPath="fonts/HelveticaLTStd-Light.otf"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:paddingLeft="20dp" android:paddingRight="20dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title_item_piece_service" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+        android:text="Celana Panjang"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price_item_piece_service" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="@color/colorCustomLightGrey"
+        android:textSize="15sp" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+        android:text="Celana Panjang"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_plus_item_piece_service" android:layout_width="22dp"
+        android:layout_height="22dp" android:scaleType="fitCenter"
+        android:layout_alignParentRight="true" android:layout_centerVertical="true"
+        android:src="@drawable/icon_add_green"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_quantity_item_piece_service" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="@color/colorCustomLightGrey"
+        android:textSize="15sp" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_toLeftOf="@id/iv_plus_item_piece_service" android:layout_centerVertical="true"
+        android:text="2" android:layout_marginRight="10dp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_minus_item_piece_service" android:layout_width="22dp"
+        android:layout_height="22dp" android:scaleType="fitCenter"
+        android:layout_toLeftOf="@id/tv_quantity_item_piece_service" android:layout_centerVertical="true"
+        android:src="@drawable/icon_minus" android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

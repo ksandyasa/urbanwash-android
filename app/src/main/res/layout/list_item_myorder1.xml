@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="174dp"
+    android:id="@+id/rl_container_item_myorder1">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_order_item_myorder1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="24sp"
+        android:textColor="@color/colorCustomGreen" android:text="# 0001"
+        fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp" android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content_item_myorder1" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_below="@id/tv_order_item_myorder1"
+        android:layout_marginLeft="12dp" android:layout_marginTop="7dp"
+        android:orientation="horizontal" android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:id="@+id/ll_content1_item_myorder1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:weightSum="10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_title_content1_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomLightGrey" android:text="Pick Up"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content1_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text=":"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="0.25"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_value_content1_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text="29 Feb | 08:30-09:30 PM"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="6.75"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content2_item_myorder1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_below="@id/ll_content1_item_myorder1"
+                android:layout_centerHorizontal="true" android:weightSum="10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_title_content2_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomLightGrey" android:text="Return"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content2_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text=":"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="0.25"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_value_content2_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text="01 Mar | 08:00-09:00 PM"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="6.75"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content3_item_myorder1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_below="@id/ll_content2_item_myorder1"
+                android:layout_centerHorizontal="true" android:weightSum="10"
+                android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_title_content3_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomLightGrey" android:text="Location"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content3_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text=":"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="0.25"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_content3_item_myorder1"
+                    android:layout_width="0dp" android:layout_height="14dp"
+                    android:scaleType="fitCenter" android:src="@drawable/icon_small_apartement"
+                    android:layout_weight="0.75"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_value_content3_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text="Apartement"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content4_item_myorder1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_below="@id/ll_content3_item_myorder1"
+                android:layout_centerHorizontal="true" android:weightSum="10"
+                android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_title_content4_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomLightGrey" android:text="Services"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content4_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text=":"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="0.25"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_value_content4_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text="Regular (4 Days)\nKilograms (8 Kg), Pieces (4 Pc),\nDry Clean (2 Pc)"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="6.75"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content5_item_myorder1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_below="@id/ll_content4_item_myorder1"
+                android:layout_centerHorizontal="true" android:weightSum="10"
+                android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_title_content5_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomLightGrey" android:text="Status"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content5_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorDarkGrey" android:text=":"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="0.25"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_value_content5_item_myorder1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:textColor="@color/colorCustomGreen" android:text="ORDER RECEIVED"
+                    fontPath="fonts/HelveticaLTStd-Light.otf" android:layout_weight="6.75"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_arrow_item_myorder1"
+                android:layout_width="14dp" android:layout_height="14dp"
+                android:scaleType="fitCenter" android:src="@drawable/icon_arrow_right"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_info_tab_content_pricing" android:layout_width="231dp"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" android:textSize="15sp"
+        android:textColor="@color/colorCustomLightGrey" android:text="Welcome to UrbanWash Wallet\nyour in-App Wallet ! You can\nredeem Vouchers, and go cashless"
+        android:gravity="center" fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_marginTop="29dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title_tab_content_pricing" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/tv_info_tab_content_pricing"
+        android:layout_centerHorizontal="true" android:layout_marginTop="26dp"
+        android:textSize="15sp" android:textColor="@color/colorDarkGrey"
+        android:text="Your UrbanWash Credit !" fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_value_tab_content_pricing" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/tv_title_tab_content_pricing"
+        android:layout_centerHorizontal="true" android:layout_marginTop="16dp"
+        android:textSize="38sp" android:textColor="@color/colorCustomGreen"
+        android:text="Rp. 750.000" fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_wallet_tab_content_pricing" android:layout_width="112dp"
+        android:layout_height="112dp" android:layout_below="@id/tv_value_tab_content_pricing"
+        android:layout_centerHorizontal="true" android:scaleType="fitCenter"
+        android:src="@drawable/iv_wallet" android:layout_marginTop="25dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_topup_tab_content_pricing" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/iv_wallet_tab_content_pricing"
+        android:layout_centerHorizontal="true" android:layout_marginTop="13dp"
+        android:textSize="15sp" android:textColor="@color/colorCustomGreen"
+        android:text="TOP UP YOUR WALLET" fontPath="fonts/HelveticaLTStd-Light.otf"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_voucher_tab_content_pricing" android:layout_width="327dp"
+        android:layout_height="wrap_content" android:layout_below="@id/tv_topup_tab_content_pricing"
+        android:layout_centerHorizontal="true" android:layout_marginTop="33dp"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_voucher_tab_content_pricing" android:layout_width="match_parent"
+            android:layout_height="44dp" android:layout_centerInParent="true"
+            android:paddingRight="50dp" android:paddingLeft="50dp"
+            android:ems="10" android:inputType="text"
+            android:hint="Input voucher code" android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" android:background="@drawable/ed_voucher_background"
+            fontPath="fonts/HelveticaLTStd-Light.otf" android:gravity="center_vertical"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_voucher_tab_content_pricing" android:layout_width="75dp"
+            android:layout_height="44dp" android:layout_alignParentRight="true"
+            android:background="@drawable/btn_voucher_selector" android:textColor="@color/colorWhite"
+            android:text="Send" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:textSize="15sp" android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
